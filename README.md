@@ -1,5 +1,4 @@
 # PhotoMaker
-Photo maker
 In order to run the project run `pod install` and then open .xcworkspace file.
 
 In order to run tests press Cmd+U.
