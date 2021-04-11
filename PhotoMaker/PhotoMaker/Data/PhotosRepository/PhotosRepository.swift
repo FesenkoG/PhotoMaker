@@ -7,7 +7,12 @@
 
 import Foundation
 
-final class PhotosRepository {
+protocol PhotosRepositoryProtocol {
+    func storeImage(image: Image)
+    func getImages() -> [Image]
+}
+
+final class PhotosRepository: PhotosRepositoryProtocol {
     private let storageService: PhotosStorageService
 
     init(storageService: PhotosStorageService = .init()) {

@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0457CBD9DB0ED6CDBC867E /* Pods_PhotoMakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE6875CA138A7F7A2750730 /* Pods_PhotoMakerTests.framework */; };
+		629CAE3CD8B1889C466899D1 /* Pods_PhotoMaker_PhotoMakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECB09AC2391C94AFE531284 /* Pods_PhotoMaker_PhotoMakerUITests.framework */; };
+		8A300626BC4ACD0B3EB7647E /* Pods_PhotoMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5711975233E97C7967DD941D /* Pods_PhotoMaker.framework */; };
 		E5336CDD2620A12C000CE374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336CDC2620A12C000CE374 /* AppDelegate.swift */; };
 		E5336CDF2620A12C000CE374 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336CDE2620A12C000CE374 /* SceneDelegate.swift */; };
 		E5336CE12620A12C000CE374 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336CE02620A12C000CE374 /* HomeViewController.swift */; };
 		E5336CE62620A12D000CE374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5336CE52620A12D000CE374 /* Assets.xcassets */; };
 		E5336CE92620A12D000CE374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5336CE72620A12D000CE374 /* LaunchScreen.storyboard */; };
-		E5336CF42620A12D000CE374 /* PhotoMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336CF32620A12D000CE374 /* PhotoMakerTests.swift */; };
 		E5336CFF2620A12D000CE374 /* PhotoMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336CFE2620A12D000CE374 /* PhotoMakerUITests.swift */; };
 		E5336D1E262158A7000CE374 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336D1D262158A7000CE374 /* HomeViewModel.swift */; };
 		E5336D2A2621591C000CE374 /* ScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336D292621591C000CE374 /* ScreenFactory.swift */; };
@@ -30,6 +32,11 @@
 		E5336D9F2621B2EF000CE374 /* PhotoFullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336D9E2621B2EF000CE374 /* PhotoFullScreenViewController.swift */; };
 		E5336DA42621B395000CE374 /* PhotosListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336DA32621B395000CE374 /* PhotosListViewModel.swift */; };
 		E5336DAA2621B4E7000CE374 /* PhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336DA92621B4E7000CE374 /* PhotoPreviewCell.swift */; };
+		E5336DE32622C2FB000CE374 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336DE22622C2FB000CE374 /* Mocks.swift */; };
+		E5336DF72622C40E000CE374 /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336DF62622C40E000CE374 /* ImageTests.swift */; };
+		E5336DFF2622C55B000CE374 /* HomeFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336DFE2622C55B000CE374 /* HomeFlowTests.swift */; };
+		E5336E042622DA1D000CE374 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336E032622DA1D000CE374 /* HomeViewModelTests.swift */; };
+		E5336E102622DB2C000CE374 /* PhotosListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5336E0F2622DB2C000CE374 /* PhotosListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28F99AFFAA8EE8555EAA88AA /* Pods-PhotoMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMaker.release.xcconfig"; path = "Target Support Files/Pods-PhotoMaker/Pods-PhotoMaker.release.xcconfig"; sourceTree = "<group>"; };
+		2ECB09AC2391C94AFE531284 /* Pods_PhotoMaker_PhotoMakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoMaker_PhotoMakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4600EDB5D2686D72078F1E93 /* Pods-PhotoMakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMakerTests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoMakerTests/Pods-PhotoMakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5711975233E97C7967DD941D /* Pods_PhotoMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E794BA614FA3F185DE4CED5 /* Pods-PhotoMaker-PhotoMakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMaker-PhotoMakerUITests.release.xcconfig"; path = "Target Support Files/Pods-PhotoMaker-PhotoMakerUITests/Pods-PhotoMaker-PhotoMakerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9BE6875CA138A7F7A2750730 /* Pods_PhotoMakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoMakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46EB9335E9F5A113566A148 /* Pods-PhotoMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMaker.debug.xcconfig"; path = "Target Support Files/Pods-PhotoMaker/Pods-PhotoMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		B05F8346B645E7B88DF5CB83 /* Pods-PhotoMaker-PhotoMakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMaker-PhotoMakerUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoMaker-PhotoMakerUITests/Pods-PhotoMaker-PhotoMakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9E55E616D54FD6B208F60F2 /* Pods-PhotoMakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMakerTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoMakerTests/Pods-PhotoMakerTests.release.xcconfig"; sourceTree = "<group>"; };
 		E5336CD92620A12C000CE374 /* PhotoMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5336CDC2620A12C000CE374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5336CDE2620A12C000CE374 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +74,6 @@
 		E5336CE82620A12D000CE374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5336CEA2620A12D000CE374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5336CEF2620A12D000CE374 /* PhotoMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5336CF32620A12D000CE374 /* PhotoMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMakerTests.swift; sourceTree = "<group>"; };
 		E5336CF52620A12D000CE374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5336CFA2620A12D000CE374 /* PhotoMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5336CFE2620A12D000CE374 /* PhotoMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMakerUITests.swift; sourceTree = "<group>"; };
@@ -79,6 +94,11 @@
 		E5336D9E2621B2EF000CE374 /* PhotoFullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFullScreenViewController.swift; sourceTree = "<group>"; };
 		E5336DA32621B395000CE374 /* PhotosListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListViewModel.swift; sourceTree = "<group>"; };
 		E5336DA92621B4E7000CE374 /* PhotoPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewCell.swift; sourceTree = "<group>"; };
+		E5336DE22622C2FB000CE374 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		E5336DF62622C40E000CE374 /* ImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
+		E5336DFE2622C55B000CE374 /* HomeFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowTests.swift; sourceTree = "<group>"; };
+		E5336E032622DA1D000CE374 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		E5336E0F2622DB2C000CE374 /* PhotosListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A300626BC4ACD0B3EB7647E /* Pods_PhotoMaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F0457CBD9DB0ED6CDBC867E /* Pods_PhotoMakerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +122,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629CAE3CD8B1889C466899D1 /* Pods_PhotoMaker_PhotoMakerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5013B2F79BEFD3C334E5C0B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5711975233E97C7967DD941D /* Pods_PhotoMaker.framework */,
+				2ECB09AC2391C94AFE531284 /* Pods_PhotoMaker_PhotoMakerUITests.framework */,
+				9BE6875CA138A7F7A2750730 /* Pods_PhotoMakerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5AB600921F2DAFAE9F11D99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A46EB9335E9F5A113566A148 /* Pods-PhotoMaker.debug.xcconfig */,
+				28F99AFFAA8EE8555EAA88AA /* Pods-PhotoMaker.release.xcconfig */,
+				B05F8346B645E7B88DF5CB83 /* Pods-PhotoMaker-PhotoMakerUITests.debug.xcconfig */,
+				5E794BA614FA3F185DE4CED5 /* Pods-PhotoMaker-PhotoMakerUITests.release.xcconfig */,
+				4600EDB5D2686D72078F1E93 /* Pods-PhotoMakerTests.debug.xcconfig */,
+				B9E55E616D54FD6B208F60F2 /* Pods-PhotoMakerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E5336CD02620A12C000CE374 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +159,8 @@
 				E5336CF22620A12D000CE374 /* PhotoMakerTests */,
 				E5336CFD2620A12D000CE374 /* PhotoMakerUITests */,
 				E5336CDA2620A12C000CE374 /* Products */,
+				D5AB600921F2DAFAE9F11D99 /* Pods */,
+				5013B2F79BEFD3C334E5C0B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,7 +192,10 @@
 		E5336CF22620A12D000CE374 /* PhotoMakerTests */ = {
 			isa = PBXGroup;
 			children = (
-				E5336CF32620A12D000CE374 /* PhotoMakerTests.swift */,
+				E5336DF52622C3F1000CE374 /* Models */,
+				E5336DF42622C3ED000CE374 /* Flows */,
+				E5336DF32622C3E5000CE374 /* ViewModels */,
+				E5336DE12622C2D9000CE374 /* Mock */,
 				E5336CF52620A12D000CE374 /* Info.plist */,
 			);
 			path = PhotoMakerTests;
@@ -309,6 +360,39 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		E5336DE12622C2D9000CE374 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				E5336DE22622C2FB000CE374 /* Mocks.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		E5336DF32622C3E5000CE374 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E5336E032622DA1D000CE374 /* HomeViewModelTests.swift */,
+				E5336E0F2622DB2C000CE374 /* PhotosListViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E5336DF42622C3ED000CE374 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				E5336DFE2622C55B000CE374 /* HomeFlowTests.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		E5336DF52622C3F1000CE374 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5336DF62622C40E000CE374 /* ImageTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -316,6 +400,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5336D032620A12D000CE374 /* Build configuration list for PBXNativeTarget "PhotoMaker" */;
 			buildPhases = (
+				617BAE185DE3B6982FF24594 /* [CP] Check Pods Manifest.lock */,
 				E5336CD52620A12C000CE374 /* Sources */,
 				E5336CD62620A12C000CE374 /* Frameworks */,
 				E5336CD72620A12C000CE374 /* Resources */,
@@ -333,6 +418,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5336D062620A12D000CE374 /* Build configuration list for PBXNativeTarget "PhotoMakerTests" */;
 			buildPhases = (
+				9AC7596BD1DE05B8F9DB832E /* [CP] Check Pods Manifest.lock */,
 				E5336CEB2620A12D000CE374 /* Sources */,
 				E5336CEC2620A12D000CE374 /* Frameworks */,
 				E5336CED2620A12D000CE374 /* Resources */,
@@ -351,6 +437,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5336D092620A12D000CE374 /* Build configuration list for PBXNativeTarget "PhotoMakerUITests" */;
 			buildPhases = (
+				0B763AB505DFA06355B5D689 /* [CP] Check Pods Manifest.lock */,
 				E5336CF62620A12D000CE374 /* Sources */,
 				E5336CF72620A12D000CE374 /* Frameworks */,
 				E5336CF82620A12D000CE374 /* Resources */,
@@ -433,6 +520,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B763AB505DFA06355B5D689 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoMaker-PhotoMakerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		617BAE185DE3B6982FF24594 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AC7596BD1DE05B8F9DB832E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoMakerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E5336CD52620A12C000CE374 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -464,7 +620,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5336CF42620A12D000CE374 /* PhotoMakerTests.swift in Sources */,
+				E5336DFF2622C55B000CE374 /* HomeFlowTests.swift in Sources */,
+				E5336E102622DB2C000CE374 /* PhotosListViewModelTests.swift in Sources */,
+				E5336DE32622C2FB000CE374 /* Mocks.swift in Sources */,
+				E5336DF72622C40E000CE374 /* ImageTests.swift in Sources */,
+				E5336E042622DA1D000CE374 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +781,7 @@
 		};
 		E5336D042620A12D000CE374 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A46EB9335E9F5A113566A148 /* Pods-PhotoMaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -640,6 +801,7 @@
 		};
 		E5336D052620A12D000CE374 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28F99AFFAA8EE8555EAA88AA /* Pods-PhotoMaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -659,10 +821,12 @@
 		};
 		E5336D072620A12D000CE374 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4600EDB5D2686D72078F1E93 /* Pods-PhotoMakerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVNJ2W8CNJ;
 				INFOPLIST_FILE = PhotoMakerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -680,10 +844,12 @@
 		};
 		E5336D082620A12D000CE374 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9E55E616D54FD6B208F60F2 /* Pods-PhotoMakerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVNJ2W8CNJ;
 				INFOPLIST_FILE = PhotoMakerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -701,9 +867,11 @@
 		};
 		E5336D0A2620A12D000CE374 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B05F8346B645E7B88DF5CB83 /* Pods-PhotoMaker-PhotoMakerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVNJ2W8CNJ;
 				INFOPLIST_FILE = PhotoMakerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -720,9 +888,11 @@
 		};
 		E5336D0B2620A12D000CE374 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E794BA614FA3F185DE4CED5 /* Pods-PhotoMaker-PhotoMakerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVNJ2W8CNJ;
 				INFOPLIST_FILE = PhotoMakerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

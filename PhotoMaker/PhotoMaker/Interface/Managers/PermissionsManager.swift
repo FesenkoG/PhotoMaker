@@ -7,7 +7,11 @@
 
 import AVFoundation
 
-final class PermissionsManager {
+protocol PermissionsManagerProtocol {
+    func verifyCameraPermissions(onSuccess: @escaping () -> Void)
+}
+
+final class PermissionsManager: PermissionsManagerProtocol {
     func verifyCameraPermissions(onSuccess: @escaping () -> Void) {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
         case .authorized:

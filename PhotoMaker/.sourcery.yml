@@ -1,0 +1,9 @@
+sources:
+  - PhotoMaker/
+templates:
+  - Pods/Sourcery/Templates
+output:
+  PhotoMakerTests/Mocks/AutoMockable.swift
+args:
+  imports: 
+    - PhotoMaker

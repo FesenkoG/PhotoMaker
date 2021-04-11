@@ -7,14 +7,30 @@
 
 import UIKit
 
-final class ScreenFactory {
+//sourcery: AutoMockable
+protocol ScreenFactoryProtocol {
+    func makeHomeScreen(
+        navigationController: UINavigationController
+    ) -> UIViewController
+    func makePhotosListScreen(flow: HomeFlow) -> UIViewController
+    func makeSavePhotoAlert(
+        completion: @escaping (String) -> Void
+    ) -> UIViewController
+    func makePhotoFullScreen(
+        image: UIImage
+    ) -> UIViewController
+}
+
+final class ScreenFactory: ScreenFactoryProtocol {
     func makeHomeScreen(
         navigationController: UINavigationController
     ) -> UIViewController {
         navigationController.viewControllers = [
             HomeViewController(
                 viewModel: HomeViewModel(
-                    flow: .init(navigationController: navigationController)
+                    flow: HomeFlow(
+                        navigationController: navigationController
+                    )
                 )
             )
         ]
@@ -22,8 +38,10 @@ final class ScreenFactory {
         return navigationController
     }
 
-    func makePhotosListScreen(flow: HomeFlow) -> PhotosListViewController {
-        return .init(viewModel: .init(homeFlow: flow))
+    func makePhotosListScreen(flow: HomeFlow) -> UIViewController {
+        return PhotosListViewController(
+            viewModel: .init(homeFlow: flow)
+        )
     }
 
     func makeSavePhotoAlert(
@@ -50,5 +68,11 @@ final class ScreenFactory {
         )
 
         return alert
+    }
+
+    func makePhotoFullScreen(
+        image: UIImage
+    ) -> UIViewController {
+        return PhotoFullScreenViewController(image: image)
     }
 }

@@ -9,19 +9,27 @@ import UIKit
 import AVFoundation
 import Photos
 
-final class HomeFlow {
+//sourcery: AutoMockable
+protocol HomeFlowProtocol {
+    func presentCamera()
+    func presentPhotoList()
+    func presentPhotoPreview(image: UIImage, creationDate: Date)
+    func presentPhotoView(image: UIImage)
+}
+
+final class HomeFlow: HomeFlowProtocol {
     private let navigationController: UINavigationController
     private let imagePickerDelegate: ImagePickerDelegate
-    private let screenFactory: ScreenFactory
-    private let photosRepository: PhotosRepository
-    private let permissionsManager: PermissionsManager
+    private let screenFactory: ScreenFactoryProtocol
+    private let photosRepository: PhotosRepositoryProtocol
+    private let permissionsManager: PermissionsManagerProtocol
 
     init(
         navigationController: UINavigationController,
-        screenFactory: ScreenFactory = ScreenFactory(),
-        photosRepository: PhotosRepository = PhotosRepository(),
-        imagePickerDelegate: ImagePickerDelegate = .init(),
-        permissionsManager: PermissionsManager = .init()
+        screenFactory: ScreenFactoryProtocol = ScreenFactory(),
+        photosRepository: PhotosRepositoryProtocol = PhotosRepository(),
+        imagePickerDelegate: ImagePickerDelegate = ImagePickerDelegate(),
+        permissionsManager: PermissionsManagerProtocol = PermissionsManager()
     ) {
         self.navigationController = navigationController
         self.screenFactory = screenFactory
@@ -75,7 +83,7 @@ final class HomeFlow {
 
     func presentPhotoView(image: UIImage) {
         navigationController.pushViewController(
-            PhotoFullScreenViewController(image: image),
+            screenFactory.makePhotoFullScreen(image: image),
             animated: true
         )
     }

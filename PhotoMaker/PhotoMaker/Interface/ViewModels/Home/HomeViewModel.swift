@@ -8,9 +8,9 @@
 import Foundation
 
 final class HomeViewModel {
-    private let flow: HomeFlow
+    private let flow: HomeFlowProtocol
 
-    init(flow: HomeFlow) {
+    init(flow: HomeFlowProtocol) {
         self.flow = flow
     }
 }

@@ -8,16 +8,16 @@
 import Foundation
 
 final class PhotosListViewModel {
-    private let photosRepository: PhotosRepository
-    private let homeFlow: HomeFlow
+    private let photosRepository: PhotosRepositoryProtocol
+    private let homeFlow: HomeFlowProtocol
 
     private(set) lazy var images: [Image] = {
         photosRepository.getImages()
     }()
 
     init(
-        homeFlow: HomeFlow,
-        photosRepository: PhotosRepository = PhotosRepository()
+        homeFlow: HomeFlowProtocol,
+        photosRepository: PhotosRepositoryProtocol = PhotosRepository()
     ) {
         self.homeFlow = homeFlow
         self.photosRepository = photosRepository
